@@ -45,7 +45,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <a href="https://careers.cognizant.com/in/en/job/COGNGLOBAL00058306012/Fresher?utm_source=linkedin&utm_medium=phenom-feeds" class="text-dark">
+            <a href="#" class="text-dark" id="fresher-link">
                 <div class="card">
                     <img src="cognizant.jpg" class="card-img" alt="Job Image">
                     <div class="card-img-overlay">
@@ -56,7 +56,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="https://www.rrbapply.gov.in/#/auth/landing" class="text-dark">
+            <a href="#" class="text-dark" id="rpf-link">
                 <div class="card">
                     <img src="railways.jpeg" class="card-img" alt="Job Image">
                     <div class="card-img-overlay">
@@ -67,7 +67,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="https://ssc.gov.in" class="text-dark">
+            <a href="#" class="text-dark" id="clerk-link">
                 <div class="card">
                     <img src="ssc.png" class="card-img" alt="Job Image">
                     <div class="card-img-overlay">
@@ -85,7 +85,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>
 <script>
   // Your web app's Firebase configuration
-      const firebaseConfig = {
+  const firebaseConfig = {
   apiKey: "AIzaSyCayFIDoJFXu5890dI45XnsO8WqhbsssHM",
   authDomain: "crashcourseindia-c3e5b.firebaseapp.com",
   projectId: "crashcourseindia-c3e5b",
@@ -96,6 +96,37 @@
 }; 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  // Function to handle Google sign-in
+  function signInWithGoogle() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+      .then((result) => {
+        // Handle successful sign-in
+        console.log('Signed in successfully:', result.user.displayName);
+      })
+      .catch((error) => {
+        // Handle errors
+        console.error('Error signing in:', error);
+      });
+  }
+
+  // Add event listener to each card
+  const fresherLink = document.getElementById('fresher-link');
+  const rpfLink = document.getElementById('rpf-link');
+  const clerkLink = document.getElementById('clerk-link');
+
+  fresherLink.addEventListener('click', function() {
+    signInWithGoogle();
+  });
+
+  rpfLink.addEventListener('click', function() {
+    signInWithGoogle();
+  });
+
+  clerkLink.addEventListener('click', function() {
+    signInWithGoogle();
+  });
 </script>
 
 <!-- Bootstrap JS -->
