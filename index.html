@@ -41,35 +41,11 @@
     </div>
 </nav>
 
-<!-- Modal for Email Subscription -->
-<div class="modal fade" id="emailSubscriptionModal" tabindex="-1" role="dialog" aria-labelledby="emailSubscriptionModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="emailSubscriptionModalLabel">Subscribe to Our Newsletter</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="emailSubscriptionForm">
-                    <div class="form-group">
-                        <label for="emailAddress">Email address</label>
-                        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Job Alerts -->
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <a href="#" class="text-dark" id="fresher-link">
+            <a href="https://careers.cognizant.com/in/en/job/COGNGLOBAL00058306012/Fresher?utm_source=linkedin&utm_medium=phenom-feeds" class="text-dark">
                 <div class="card">
                     <img src="cognizant.jpg" class="card-img" alt="Job Image">
                     <div class="card-img-overlay">
@@ -80,7 +56,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="#" class="text-dark" id="rpf-link">
+            <a href="https://www.rrbapply.gov.in/#/auth/landing" class="text-dark">
                 <div class="card">
                     <img src="railways.jpeg" class="card-img" alt="Job Image">
                     <div class="card-img-overlay">
@@ -91,7 +67,7 @@
             </a>
         </div>
         <div class="col-md-6">
-            <a href="#" class="text-dark" id="clerk-link">
+            <a href="https://ssc.gov.in" class="text-dark">
                 <div class="card">
                     <img src="ssc.png" class="card-img" alt="Job Image">
                     <div class="card-img-overlay">
@@ -104,52 +80,10 @@
     </div>
 </div>
 
-<!-- JavaScript -->
+<!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-    // Function to show email subscription modal
-    function showEmailSubscriptionModal() {
-        $('#emailSubscriptionModal').modal('show');
-    }
-
-    // Add event listener to each card
-    const fresherLink = document.getElementById('fresher-link');
-    const rpfLink = document.getElementById('rpf-link');
-    const clerkLink = document.getElementById('clerk-link');
-
-    fresherLink.addEventListener('click', function() {
-        // Check if email subscription already exists
-        if (!localStorage.getItem('emailSubscription')) {
-            // If not subscribed, show email subscription modal
-            showEmailSubscriptionModal();
-        }
-    });
-
-    rpfLink.addEventListener('click', function() {
-        if (!localStorage.getItem('emailSubscription')) {
-            showEmailSubscriptionModal();
-        }
-    });
-
-    clerkLink.addEventListener('click', function() {
-        if (!localStorage.getItem('emailSubscription')) {
-            showEmailSubscriptionModal();
-        }
-    });
-
-    // Submit email subscription form
-    document.getElementById('emailSubscriptionForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const emailAddress = document.getElementById('emailAddress').value;
-        // Save email address to localStorage
-        localStorage.setItem('emailSubscription', emailAddress);
-        // Close the modal
-        $('#emailSubscriptionModal').modal('hide');
-    });
-</script>
 
 </body>
 </html>
