@@ -1,44 +1,90 @@
-/* Custom CSS for the navbar */ 
-.navbar-brand { 
-    font-family: 'Poppins', sans-serif; 
-    font-size: 24px; 
-    font-weight: 700; 
-    color: white; 
-} 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
 
-/* Additional styles */
-.navbar {
-    background-color: #343a40; /* Dark background color */
+.social-handles {
+    text-align: center;
+    margin-top: 20px;
 }
-.navbar-nav .nav-link {
-    color: white; /* White color for navbar links */
-}
-.navbar-nav .nav-link:hover {
-    color: #ffc107; /* Yellow color on hover */
-}
+
 .card {
-    margin-bottom: 20px;
-    border: none; /* Remove border from cards */
-    border-radius: 10px; /* Add border radius to cards */
-    background-color: #fff; /* White background for cards */
+    margin-bottom: 10px;
+    border: 1px solid #ced4da; /* Add border to cards */
+    border-radius: 8px; /* Add border radius to cards */
+    background-color: white; /* White background for cards */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect to cards */
     transition: all 0.3s ease;
     height: 100%; /* Ensure all cards have equal height */
 }
+
 .card:hover {
     transform: translateY(-5px); /* Add hover effect to cards */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Change shadow on hover */
 }
+
 .card-img-overlay {
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay background color */
-    color: white; /* White text color */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
     padding: 20px;
-    border-radius: 10px; /* Add border radius to card overlay */
+    border-radius: 8px; /* Add border radius to card overlay */
 }
+
 .card-img-overlay:hover {
-    background: rgba(0, 0, 0, 0.9); /* Darken overlay on hover */
+    background: rgba(0, 0, 0, 0.7);
 }
+
+/* Custom CSS for responsiveness */
+@media (max-width: 767px) {
+    .card {
+        width: 80%; /* Make cards wider on mobile */
+        margin: 0 auto; /* Center align cards horizontally */
+    }
+    
+    .card-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 45%; /* Keep card width same as before */
+        height: auto;
+    }
+
+.card-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Custom CSS for the logo */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px; /* Add padding to the logo */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; /* Set maximum height for the logo */
+}
+
+/* Add styles for social handles */
+.social-handles a {
+    margin: 0 10px; /* Add margin between social handles */
+}
+
+.col-md-6{
+    padding: 10px;
+}
+
+/* Custom styles for job title */
 .card-title {
     font-size: 24px; /* Increase font size for better visibility */
     font-weight: bold; /* Make the font bold for emphasis */
+    color: white; /* Set font color to white */
 }
+
+
