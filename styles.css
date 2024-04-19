@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.social-handles {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 10px;
+    border: 1px solid #ced4da; /* Add border to cards */
+    border-radius: 8px; /* Add border radius to cards */
+    background-color: white; /* White background for cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect to cards */
+    transition: all 0.3s ease;
+    height: 100%; /* Ensure all cards have equal height */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Add hover effect to cards */
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 8px; /* Add border radius to card overlay */
+}
+
+.card-img-overlay:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Custom CSS for responsiveness */
+@media (max-width: 767px) {
+    .card {
+        width: 80%; /* Make cards wider on mobile */
+        margin: 0 auto; /* Center align cards horizontally */
+    }
+    
+    .card-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 45%; /* Keep card width same as before */
+        height: auto;
+    }
+    
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Custom CSS for the logo */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px; /* Add padding to the logo */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; /* Set maximum height for the logo */
+}
+
+/* Add styles for social handles */
+.social-handles a {
+    margin: 0 10px; /* Add margin between social handles */
+}
+
+.col-md-6{
+    padding: 10px;
+}
+
+/* Custom styles for job title */
+.card-title {
+    font-size: 24px; /* Increase font size for better visibility */
+    font-weight: bold; /* Make the font bold for emphasis */
+    color: white; /* Set font color to white */
+}
