@@ -41,6 +41,30 @@
     </div>
 </nav>
 
+<!-- Modal for Email Subscription -->
+<div class="modal fade" id="emailSubscriptionModal" tabindex="-1" role="dialog" aria-labelledby="emailSubscriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="emailSubscriptionModalLabel">Subscribe to Our Newsletter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="emailSubscriptionForm">
+                    <div class="form-group">
+                        <label for="emailAddress">Email address</label>
+                        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Job Alerts -->
 <div class="container">
     <div class="row">
@@ -80,59 +104,52 @@
     </div>
 </div>
 
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>
-<script>
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-  apiKey: "AIzaSyCayFIDoJFXu5890dI45XnsO8WqhbsssHM",
-  authDomain: "crashcourseindia-c3e5b.firebaseapp.com",
-  projectId: "crashcourseindia-c3e5b",
-  storageBucket: "crashcourseindia-c3e5b.appspot.com",
-  messagingSenderId: "291311428031",
-  appId: "1:291311428031:web:c10b73854eac53f42d010a",
-  measurementId: "G-WB6F7V4GHL"
-}; 
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  // Function to handle Google sign-in
-  function signInWithGoogle() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider)
-      .then((result) => {
-        // Handle successful sign-in
-        console.log('Signed in successfully:', result.user.displayName);
-      })
-      .catch((error) => {
-        // Handle errors
-        console.error('Error signing in:', error);
-      });
-  }
-
-  // Add event listener to each card
-  const fresherLink = document.getElementById('fresher-link');
-  const rpfLink = document.getElementById('rpf-link');
-  const clerkLink = document.getElementById('clerk-link');
-
-  fresherLink.addEventListener('click', function() {
-    signInWithGoogle();
-  });
-
-  rpfLink.addEventListener('click', function() {
-    signInWithGoogle();
-  });
-
-  clerkLink.addEventListener('click', function() {
-    signInWithGoogle();
-  });
-</script>
-
-<!-- Bootstrap JS -->
+<!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to show email subscription modal
+    function showEmailSubscriptionModal() {
+        $('#emailSubscriptionModal').modal('show');
+    }
+
+    // Add event listener to each card
+    const fresherLink = document.getElementById('fresher-link');
+    const rpfLink = document.getElementById('rpf-link');
+    const clerkLink = document.getElementById('clerk-link');
+
+    fresherLink.addEventListener('click', function() {
+        // Check if email subscription already exists
+        if (!localStorage.getItem('emailSubscription')) {
+            // If not subscribed, show email subscription modal
+            showEmailSubscriptionModal();
+        }
+    });
+
+    rpfLink.addEventListener('click', function() {
+        if (!localStorage.getItem('emailSubscription')) {
+            showEmailSubscriptionModal();
+        }
+    });
+
+    clerkLink.addEventListener('click', function() {
+        if (!localStorage.getItem('emailSubscription')) {
+            showEmailSubscriptionModal();
+        }
+    });
+
+    // Submit email subscription form
+    document.getElementById('emailSubscriptionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const emailAddress = document.getElementById('emailAddress').value;
+        // Save email address to localStorage
+        localStorage.setItem('emailSubscription', emailAddress);
+        // Close the modal
+        $('#emailSubscriptionModal').modal('hide');
+    });
+</script>
 
 </body>
 </html>
