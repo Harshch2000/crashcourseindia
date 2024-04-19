@@ -51,8 +51,8 @@ body {
         width: 45%; /* Keep card width same as before */
         height: auto;
     }
-
-.card-img {
+    
+    .card-img {
         width: 100%;
         height: auto;
     }
@@ -86,5 +86,3 @@ body {
     font-weight: bold; /* Make the font bold for emphasis */
     color: white; /* Set font color to white */
 }
-
-
