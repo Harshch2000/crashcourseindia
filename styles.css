@@ -10,7 +10,7 @@ body {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: 180px; /* Reduced height for the cards */
+    height: 170px; /* Reduced height for the cards */
     overflow: hidden; /* Ensure content does not overflow */
 }
 
