@@ -37,5 +37,9 @@ body {
 .card-title {
     font-size: 20px; /* Reduced font size for card titles */
     font-weight: bold;
-    color: white; /* Text color remains white */
+    color: white; /* Text color for card titles */
+}
+
+.card-text {
+    color: white; /* Text color for card details */
 }
