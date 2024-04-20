@@ -1,88 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
-}
-
-.social-handles {
-    text-align: center;
-    margin-top: 20px;
-}
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f8f9fa; /* Light gray background */ 
+} 
 
 .card {
     margin-bottom: 10px;
-    border: 1px solid #ced4da; /* Add border to cards */
-    border-radius: 8px; /* Add border radius to cards */
-    background-color: white; /* White background for cards */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect to cards */
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: 100%; /* Ensure all cards have equal height */
+    height: 200px; /* Fixed height for the cards */
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Add hover effect to cards */
+    transform: translateY(-5px);
 }
 
-.card-img-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+.card-body {
     padding: 20px;
-    border-radius: 8px; /* Add border radius to card overlay */
 }
 
-.card-img-overlay:hover {
-    background: rgba(0, 0, 0, 0.7);
+.card-1 {
+    background-color: #ffc107; /* Yellow color for card 1 */
 }
 
-/* Custom CSS for responsiveness */
-@media (max-width: 767px) {
-    .card {
-        width: 80%; /* Make cards wider on mobile */
-        margin: 0 auto; /* Center align cards horizontally */
-    }
-    
-    .card-img {
-        width: 100%;
-        height: 100%;
-    }
+.card-2 {
+    background-color: #17a2b8; /* Blue color for card 2 */
 }
 
-@media (min-width: 768px) {
-    .card {
-        width: 45%; /* Keep card width same as before */
-        height: auto;
-    }
-    
-    .card-img {
-        width: 100%;
-        height: auto;
-    }
+.card-3 {
+    background-color: #28a745; /* Green color for card 3 */
 }
 
-/* Custom CSS for the logo */
-.logo {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px; /* Add padding to the logo */
-}
-
-.logo img {
-    max-width: 100%;
-    height: auto;
-    max-height: 100px; /* Set maximum height for the logo */
-}
-
-/* Add styles for social handles */
-.social-handles a {
-    margin: 0 10px; /* Add margin between social handles */
-}
-
-.col-md-6{
-    padding: 10px;
-}
-
-/* Custom styles for job title */
 .card-title {
-    font-size: 24px; /* Increase font size for better visibility */
-    font-weight: bold; /* Make the font bold for emphasis */
-    color: white; /* Set font color to white */
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
 }
