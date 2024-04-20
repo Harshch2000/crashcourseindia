@@ -22,19 +22,19 @@ body {
 }
 
 .card-1 {
-    background-color: #1679AB; /* Yellow color for card 1 */
+    background-color: #1679AB; /* Updated color for card 1 */
 }
 
 .card-2 {
-    background-color: #17a2b8; /* Blue color for card 2 */
+    background-color: #FF204E; /* Updated color for card 2 */
 }
 
 .card-3 {
-    background-color: #28a745; /* Green color for card 3 */
+    background-color: #A0153E; /* Updated color for card 3 */
 }
 
 .card-title {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: white; /* Text color remains white */
 }
