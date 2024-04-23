@@ -30,19 +30,23 @@ body {
 }
 
 .card-1 {
-    background-color: #1679AB; /* Updated color for card 1 */
+    background-color: #F08A5D; /* Updated color for card 1 */
 }
 
 .card-2 {
-    background-color: #FF204E; /* Updated color for card 2 */
+    background-color: #1679AB; /* Updated color for card 2 */
 }
 
 .card-3 {
-    background-color: #A0153E; /* Updated color for card 3 */
+    background-color: #FF204E; /* Updated color for card 3 */
 }
 
 .card-4 {
-    background-color: #FFD43B; /* Updated color for card 4 */
+    background-color: #A0153E; /* Updated color for card 4 */
+}
+
+.card-5 {
+    background-color: #FFD43B; /* Color for card 5 */
 }
 
 .card-title {
