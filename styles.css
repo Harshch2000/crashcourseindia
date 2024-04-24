@@ -62,3 +62,7 @@ body {
 .card-text {
     color: white; /* Text color for card details */
 }
+
+.card-0 .card-title {
+    font-size: 28px; /* Larger font size for card-0 title */
+}
