@@ -29,6 +29,10 @@ body {
     padding: 15px; /* Reduced padding inside the cards */
 }
 
+.card-0 {
+    background-color: #344955; /* Color for the first card */
+}
+
 .card-1 {
     background-color: #F08A5D; /* Updated color for card 1 */
 }
