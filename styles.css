@@ -88,7 +88,14 @@ body {
     border: none;
     border-radius: 4px;
 }
-
+.formContainer button#signIn {
+    width: 100%;
+    padding: 10px;
+    background-color: #343a40; /* Same color as navbar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
 /* Newsletter Content */
 #allcards {
     display: none; /* Initially hide content */
