@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
@@ -5,11 +6,13 @@
     color: white;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa; /* Light gray background */
 }
 
+/* Cards */
 .card {
     margin-bottom: 20px; /* Increased margin between cards */
     border: 1px solid #ced4da;
@@ -62,10 +65,31 @@ body {
 .card-0 .card-title {
     font-size: 28px; /* Larger font size for card-0 title */
 }
-#signUp {
-background-color: #343a40; /* Same color as navbar */
-color: white;
-width: 100%; /* Adjusts to full width */
-margin-top: 10px; /* Adds space between form and button */
+
+/* Signup Form */
+.formContainer {
+    padding: 20px;
 }
 
+.formContainer input[type="email"],
+.formContainer input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.formContainer button#signUp {
+    width: 100%;
+    padding: 10px;
+    background-color: #343a40; /* Same color as navbar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Newsletter Content */
+#allcards {
+    display: none; /* Initially hide content */
+}
