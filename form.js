@@ -15,18 +15,12 @@ var firebaseConfig = {
 	// Initialize Firebase 
 firebase.initializeApp(firebaseConfig); 
 
-const auth = firebase.auth(); 
+const auth = firebase.auth();
 
-// Active user to homepage 
-firebase.auth().onAuthStateChanged((user) => { 
-if (user) { 
-	var email = user.email; 
-	alert("Active user " + email); 
-} else { 
 // Signup function 
 function signUp() { 
-var email = document.getElementById("emailInput"); 
-var password = Math.floor(Date.now() / 1000);
+var email = document.getElementById("email"); 
+var password = Math.floor(Date.now() / 1000); 
 
 const promise = auth.createUserWithEmailAndPassword( 
 	email.value, 
@@ -35,5 +29,3 @@ const promise = auth.createUserWithEmailAndPassword(
 promise.catch((e) => alert(e.message)); 
 alert("SignUp Successfully"); 
 } 
-} 
-}); 
