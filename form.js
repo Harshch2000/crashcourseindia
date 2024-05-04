@@ -12,15 +12,15 @@ var firebaseConfig = {
     measurementId: "G-WB6F7V4GHL",
 }; 
 
-	// Initialize Firebase 
+// Initialize Firebase 
 firebase.initializeApp(firebaseConfig); 
 
-const auth = firebase.auth();
+const auth = firebase.auth(); 
 
 // Signup function 
 function signUp() { 
 var email = document.getElementById("email"); 
-var password = Math.floor(Date.now() / 1000); 
+var password = document.getElementById("password"); 
 
 const promise = auth.createUserWithEmailAndPassword( 
 	email.value, 
@@ -29,3 +29,39 @@ const promise = auth.createUserWithEmailAndPassword(
 promise.catch((e) => alert(e.message)); 
 alert("SignUp Successfully"); 
 } 
+
+// SignIN function 
+function signIn() { 
+var email = document.getElementById("email"); 
+var password = document.getElementById("password"); 
+const promise = auth.signInWithEmailAndPassword( 
+			email.value, password.value); 
+promise.catch((e) => alert(e.message)); 
+} 
+
+// SignOut 
+function signOut() { 
+auth.signOut(); 
+alert("SignOut Successfully from System"); 
+} 
+
+// Active user to homepage 
+function checkFunction() {
+    firebase.auth().onAuthStateChanged((user) => { 
+        if (user) { 
+            var email = user.email; 
+            alert("Active user " + email); 
+        } else { 
+            alert("No Active user Found"); 
+            document.getElementById('whatsappCard').addEventListener('click', function() {
+                if (!checkFunction()) {
+                    var email = prompt("Please enter your email:");
+                    var password = prompt("Please enter your password:");
+                    // You can now use 'email' and 'password' for further processing
+                } else {
+                    window.open("https://whatsapp.com/channel/0029VaaDqIP7YSd244XP8O1T", '_blank');
+                }
+            });
+        } 
+        }); 
+}
