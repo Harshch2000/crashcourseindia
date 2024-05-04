@@ -62,3 +62,10 @@ body {
 .card-0 .card-title {
     font-size: 28px; /* Larger font size for card-0 title */
 }
+#subscribeBtn {
+background-color: #343a40; /* Same color as navbar */
+color: white;
+width: 100%; /* Adjusts to full width */
+margin-top: 10px; /* Adds space between form and button */
+}
+
