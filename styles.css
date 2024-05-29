@@ -96,7 +96,3 @@ body {
     border: none;
     border-radius: 4px;
 }
-/* Newsletter Content */
-#allcards {
-    display: none; /* Initially hide content */
-}
