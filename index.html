@@ -24,31 +24,8 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6831775934070766"
      crossorigin="anonymous"></script>
 
-    <!-- Firebase authentication 
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script> 
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script> 
-    <script src="form.js"></script>
-    
-    <script>
-        // Active user to homepage 
-        function checklogin() {
-            firebase.auth().onAuthStateChanged((user) => { 
-                if (user) { 
-                    // User is signed in
-                    document.getElementById("emailpassword").style.display = "none"; // Hide the sign-up form
-                    document.getElementById("allcards").style.display = "block"; // Show the content
-                } else { 
-                    // No user is signed in
-                    document.getElementById("emailpassword").style.display = "block"; // Show the sign-up form
-                    document.getElementById("allcards").style.display = "none"; // Hide the content
-                } 
-            });
-        }
-    </script> -->
-    
 </head>
 <body>
-    <!-- <body  onload="checklogin()" > -->
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -69,7 +46,7 @@
 </nav>
 
 <!-- Newsletter Subscription 
-<div class="formContainer" id="emailpassword" style="display: none;">
+<div class="formContainer" id="emailpassword">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -83,13 +60,13 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <button onclick="signUp()" id="signUp" class="btn btn-dark btn-block mt-3">Create an account</button>
-                <button onclick="signIn()" id="signIn" class="btn btn-dark btn-block mt-3">Sign In</button>
+                <button id="signUp" class="btn btn-dark btn-block mt-3">Create an account</button>
+                <button id="signIn" class="btn btn-dark btn-block mt-3">Sign In</button>
             </div>
         </div>
     </div>
 </div>
-    -->
+ -->   
 
 <div id="allcards">
     <!-- New Card: Join WhatsApp Channel -->
