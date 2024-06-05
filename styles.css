@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    padding-top: 0; /* Remove top padding */
+    padding-top: 0 !important; /* Remove top padding */
     padding-bottom: 0; /* Remove bottom padding */
 }
 
@@ -15,8 +15,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa; /* Light gray background */
-    padding-top: 20px; /* Padding above carousel */
-    padding-bottom: 20px; /* Padding below carousel */
 }
 
 /* Cards */
