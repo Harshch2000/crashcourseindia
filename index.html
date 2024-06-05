@@ -8,7 +8,58 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+    <style>
+        /* Custom CSS styles here */
+        /* Navbar */
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            padding-top: 20px; /* Padding above carousel */
+            padding-bottom: 20px; /* Padding below carousel */
+        }
+
+        /* Cards */
+        .card {
+            margin-bottom: 20px; /* Increased margin between cards */
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden; /* Ensure content does not overflow */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-body {
+            padding: 15px; /* Reduced padding inside the cards */
+        }
+
+        .card-contact {
+            background-color: #FF7043; /* Random color for the contact card */
+            height: 100px; /* Reduced height for the contact card */
+        }
+
+        .card-title {
+            font-size: 20px; /* Reduced font size for card titles */
+            font-weight: bold;
+            color: white; /* Text color for card titles */
+        }
+
+        .card-text {
+            color: white; /* Text color for card details */
+        }
+    </style>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
@@ -54,7 +105,55 @@
     <!-- Carousel content goes here -->
 </div>
 
-<!-- All other content goes here -->
+<div id="allcards">
+    <!-- Contact Us Card -->
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="extra-details.html" class="text-dark">
+                    <div class="card card-contact" style="background-color: #FF7043;">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Us</h5>
+                            <p class="card-text">E-mail: crashcourseind@gmail.com</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join WhatsApp Channel Card -->
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="https://whatsapp.com/channel/0029VaaDqIP7YSd244XP8O1T" target="_blank" class="text-dark">
+                    <div class="card card-0" style="background-color: #344955;">
+                        <div class="card-body">
+                            <h5 class="card-title">Join our WhatsApp channel</h5>
+                            <p class="card-text">Private/Government job alerts<br>Referrals<br>Trainings</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mock and Quiz Card -->
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="mockandquiz.html" class="text-dark">
+                    <div class="card card-5" style="background-color: #3C5B6F;">
+                        <div class="card-body">
+                            <h5 class="card-title">Mock/Quizzes</h5>
+                            <p class="card-text">Free mock for SSC, Railway, JEE, NEET, UPSC and all competitive exams<br>Interactive quizzes</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
