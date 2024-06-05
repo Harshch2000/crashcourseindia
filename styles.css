@@ -6,6 +6,11 @@
     color: white;
 }
 
+.navbar {
+    padding-top: 0; /* Remove top padding */
+    padding-bottom: 0; /* Remove bottom padding */
+}
+
 /* Body */
 body {
     font-family: Arial, sans-serif;
