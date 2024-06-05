@@ -24,7 +24,8 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             overflow: hidden; /* Ensure content does not overflow */
-            width: 100%; /* Set width to 100% of the column */
+            width: 90%; /* Set width to less than half */
+            margin: 0 auto; /* Center the card horizontally */
         }
 
         .card-contact:hover {
@@ -114,8 +115,8 @@
 
 <!-- Contact Us and Job Dashboard Cards -->
 <div class="container" style="padding-top: 20px;">
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
             <a href="extra-details.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -125,7 +126,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
             <a href="jobdashboard.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
