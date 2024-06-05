@@ -20,7 +20,6 @@ body {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: 100px; /* Reduced height for the cards */
     overflow: hidden; /* Ensure content does not overflow */
 }
 
@@ -34,6 +33,7 @@ body {
 
 .card-contact {
     background-color: #FF7043; /* Random color for the contact card */
+    height: 100px; /* Reduced height for the contact card */
 }
 
 .card-title {
