@@ -20,7 +20,7 @@ body {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: 170px; /* Reduced height for the cards */
+    height: 100px; /* Reduced height for the cards */
     overflow: hidden; /* Ensure content does not overflow */
 }
 
@@ -36,26 +36,6 @@ body {
     background-color: #FF7043; /* Random color for the contact card */
 }
 
-.card-0 {
-    background-color: #38A3A5; /* Color for the first card */
-}
-
-.card-1 {
-    background-color: #F08A5D; /* Updated color for card 1 */
-}
-
-.card-3 {
-    background-color: #FF204E; /* Updated color for card 3 */
-}
-
-.card-4 {
-    background-color: #A0153E; /* Updated color for card 4 */
-}
-
-.card-5 {
-    background-color: #FFD43B; /* Color for card 5 */
-}
-
 .card-title {
     font-size: 20px; /* Reduced font size for card titles */
     font-weight: bold;
@@ -64,10 +44,6 @@ body {
 
 .card-text {
     color: white; /* Text color for card details */
-}
-
-.card-0 .card-title {
-    font-size: 28px; /* Larger font size for card-0 title */
 }
 
 /* Additional Details Section */
