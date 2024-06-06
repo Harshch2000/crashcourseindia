@@ -65,6 +65,11 @@
             font-size: 12px; /* Set font size for the text */
             font-weight: bold; /* Set font weight for the text */
         }
+
+        /* Specific card width adjustments */
+        .card-contact.contact-us, .card-contact.mock-quiz {
+            width: calc(100% + 20px); /* Increase width by a little */
+        }
     </style>
 </head>
 <body>
@@ -130,10 +135,10 @@
 <!-- Contact Us and Job Dashboard Cards -->
 <div class="container" style="padding-top: 20px;">
     <div class="row">
-        <!-- Each card is wrapped in a column with a class col-12 col-md-6 col-lg-3 to create four columns per row across all screen sizes -->
-        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <!-- Each card is wrapped in a column with a class col-6 col-lg-3 to create two columns per row -->
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="extra-details.html" class="text-dark">
-                <div class="card card-contact">
+                <div class="card card-contact contact-us">
                     <div class="card-body">
                         <img src="contactus.png" alt="Contact Us Icon">
                         <span>Contact Us</span>
@@ -141,7 +146,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="jobdashboard.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -151,9 +156,9 @@
                 </div>
             </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="mockandquiz.html" class="text-dark">
-                <div class="card card-contact">
+                <div class="card card-contact mock-quiz">
                     <div class="card-body">
                         <img src="quiz.png" alt="Mock/Quiz Icon">
                         <span>Mock/Quiz</span>
@@ -161,7 +166,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="videolectures.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
