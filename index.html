@@ -26,6 +26,10 @@
             overflow: hidden; /* Ensure content does not overflow */
             width: 100%; /* Set width to 100% */
             margin-bottom: 20px; /* Add space between cards on small screens */
+            height: 100px; /* Set height equal to a button */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .card-contact:hover {
@@ -42,13 +46,13 @@
         }
 
         .card-contact img {
-            width: 60px; /* Set image width */
-            height: 60px; /* Set image height */
+            width: 40px; /* Set image width */
+            height: 40px; /* Set image height */
             margin-bottom: 10px; /* Add margin below the image */
         }
 
         .card-contact span {
-            font-size: 16px; /* Set font size for the text */
+            font-size: 14px; /* Set font size for the text */
             font-weight: bold; /* Set font weight for the text */
         }
 
@@ -122,7 +126,7 @@
 <!-- Contact Us and Job Dashboard Cards -->
 <div class="container" style="padding-top: 20px;">
     <div class="row">
-        <div class="col-md-6 col-lg-5">
+        <div class="col-md-6 col-lg-3">
             <a href="extra-details.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -132,12 +136,32 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-6 col-lg-5">
+        <div class="col-md-6 col-lg-3">
             <a href="jobdashboard.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="jobsearch.png" alt="Job Dashboard Icon">
                         <span>Job Dashboard</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="mockandquiz.html" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="quiz.png" alt="Mock/Quiz Icon">
+                        <span>Mock/Quiz</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <a href="videolectures.html" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="liveclasses.png" alt="Video Lectures Icon">
+                        <span>Video Lectures</span>
                     </div>
                 </div>
             </a>
