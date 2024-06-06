@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mocks &amp; Quizzes</title>
     <!-- Bootstrap CSS -->
@@ -26,7 +25,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             overflow: hidden; /* Ensure content does not overflow */
-            width: 100%; /* Set width to 100% to fit in column */
             margin-bottom: 20px; /* Add space between cards on small screens */
             height: 100px; /* Set height equal to a button */
             display: flex;
@@ -61,10 +59,18 @@
             font-size: 12px; /* Set font size for the text */
             font-weight: bold; /* Set font weight for the text */
         }
+        
+        /* Cards container styling */
+        .cards-container {
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping */
+            overflow-x: auto; /* Allow horizontal scrolling */
+            padding-top: 20px;
+        }
 
-        /* Specific card width adjustments */
-        .card-contact.contact-us, .card-contact.mock-quiz {
-            width: calc(100% + 20px); /* Increase width by a little */
+        .cards-container > .col {
+            flex: 0 0 auto; /* Prevent shrinking and growing */
+            max-width: 200px; /* Set max width for each card */
         }
     </style>
 </head>
@@ -89,10 +95,10 @@
 </nav>  
 
 <!-- Cards Section -->
-<div class="container" style="padding-top: 20px;">
-    <div class="row">
-        <!-- Each card is wrapped in a column with a class col-6 col-lg-3 to create two columns per row -->
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+<div class="container">
+    <div class="row cards-container">
+        <!-- Each card is wrapped in a column with a class col to allow horizontal scrolling -->
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -102,7 +108,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -112,7 +118,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -122,7 +128,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -132,7 +138,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -142,7 +148,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -152,7 +158,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -162,7 +168,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -172,7 +178,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -182,7 +188,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-6 col-lg-3 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <a href="#" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
