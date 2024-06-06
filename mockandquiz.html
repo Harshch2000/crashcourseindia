@@ -25,7 +25,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             overflow: hidden; /* Ensure content does not overflow */
-            width: 95%; /* Set width to 95% to fit within the container */
+            width: 100%; /* Set width to 100% to fit within the container */
             margin-bottom: 20px; /* Add space between cards on small screens */
             height: 100px; /* Set height equal to a button */
             display: flex;
@@ -67,6 +67,7 @@
             flex-direction: column; /* Ensure cards are displayed in a column */
             align-items: center; /* Center cards horizontally */
             padding-top: 20px;
+            width: 100%; /* Ensure the container takes full width */
         }
     </style>
 </head>
@@ -91,11 +92,11 @@
 </nav>  
 
 <!-- Cards Section -->
-<div class="container">
+<div class="container-fluid"> <!-- Changed to container-fluid for full width -->
     <div class="row cards-container">
         <!-- Each card is wrapped in a column with a class col to ensure column layout -->
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -105,7 +106,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -115,7 +116,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -125,7 +126,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -135,7 +136,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -145,7 +146,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -155,7 +156,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -165,7 +166,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -175,7 +176,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
@@ -185,7 +186,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-dark">
+            <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
                         <img src="icon.png" alt="Icon">
