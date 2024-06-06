@@ -30,7 +30,8 @@
             height: 100px; /* Set height equal to a button */
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* Align content to the left */
+            padding-left: 10px; /* Add padding to the left */
         }
 
         /* Card hover effect */
@@ -40,24 +41,23 @@
 
         /* Card body styling */
         .card-contact .card-body {
-            padding: 10px; /* Reduced padding inside the card body */
             display: flex;
             flex-direction: row; /* Align content in a row */
             align-items: center;
-            justify-content: center;
-            text-align: center; /* Center text horizontally */
+            text-align: left; /* Align text to the left */
+            padding: 0; /* Remove padding inside the card body */
         }
 
         /* Image styling inside cards */
         .card-contact img {
-            width: 30px; /* Set image width */
-            height: 30px; /* Set image height */
-            margin-right: 10px; /* Add margin to the right of the image */
+            width: 50px; /* Increase image width */
+            height: 50px; /* Increase image height */
+            margin-right: 20px; /* Add margin to the right of the image */
         }
 
         /* Text styling inside cards */
         .card-contact span {
-            font-size: 12px; /* Set font size for the text */
+            font-size: 16px; /* Increase font size for the text */
             font-weight: bold; /* Set font weight for the text */
         }
 
