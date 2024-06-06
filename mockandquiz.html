@@ -11,6 +11,62 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Navbar styling */
+        .navbar {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        /* Card styling */
+        .card-contact {
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden; /* Ensure content does not overflow */
+            width: 100%; /* Set width to 100% to fit in column */
+            margin-bottom: 20px; /* Add space between cards on small screens */
+            height: 100px; /* Set height equal to a button */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Card hover effect */
+        .card-contact:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Card body styling */
+        .card-contact .card-body {
+            padding: 10px; /* Reduced padding inside the card body */
+            display: flex;
+            flex-direction: column; /* Align content in a column */
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Center text horizontally */
+        }
+
+        /* Image styling inside cards */
+        .card-contact img {
+            width: 30px; /* Set image width */
+            height: 30px; /* Set image height */
+            margin-bottom: 5px; /* Add margin below the image */
+        }
+
+        /* Text styling inside cards */
+        .card-contact span {
+            font-size: 12px; /* Set font size for the text */
+            font-weight: bold; /* Set font weight for the text */
+        }
+
+        /* Specific card width adjustments */
+        .card-contact.contact-us, .card-contact.mock-quiz {
+            width: calc(100% + 20px); /* Increase width by a little */
+        }
+    </style>
 </head>
 <body>
 
@@ -31,6 +87,113 @@
         </ul>
     </div>
 </nav>  
+
+<!-- Cards Section -->
+<div class="container" style="padding-top: 20px;">
+    <div class="row">
+        <!-- Each card is wrapped in a column with a class col-6 col-lg-3 to create two columns per row -->
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 1</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 2</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 3</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 4</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 5</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 6</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 7</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 8</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 9</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <a href="#" class="text-dark">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="icon.png" alt="Icon">
+                        <span>Card 10</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
