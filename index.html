@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crash Course India</title>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
+        /* Navbar styling */
         .navbar {
             padding-top: 5px;
             padding-bottom: 5px;
         }
 
+        /* Card styling */
         .card-contact {
             border: 1px solid #ced4da;
             border-radius: 8px;
@@ -24,7 +30,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             overflow: hidden; /* Ensure content does not overflow */
-            width: 180px; /* Set width to make it look like a button */
+            width: 100%; /* Set width to 100% to fit in column */
             margin-bottom: 20px; /* Add space between cards on small screens */
             height: 100px; /* Set height equal to a button */
             display: flex;
@@ -32,10 +38,12 @@
             justify-content: center;
         }
 
+        /* Card hover effect */
         .card-contact:hover {
             transform: translateY(-5px);
         }
 
+        /* Card body styling */
         .card-contact .card-body {
             padding: 10px; /* Reduced padding inside the card body */
             display: flex;
@@ -45,21 +53,17 @@
             text-align: center; /* Center text horizontally */
         }
 
+        /* Image styling inside cards */
         .card-contact img {
-            width: 40px; /* Set image width */
-            height: 40px; /* Set image height */
-            margin-bottom: 10px; /* Add margin below the image */
+            width: 30px; /* Set image width */
+            height: 30px; /* Set image height */
+            margin-bottom: 5px; /* Add margin below the image */
         }
 
+        /* Text styling inside cards */
         .card-contact span {
-            font-size: 14px; /* Set font size for the text */
+            font-size: 12px; /* Set font size for the text */
             font-weight: bold; /* Set font weight for the text */
-        }
-
-        @media (min-width: 768px) {
-            .card-contact {
-                margin-bottom: 0; /* Remove bottom margin on larger screens */
-            }
         }
     </style>
 </head>
@@ -126,7 +130,8 @@
 <!-- Contact Us and Job Dashboard Cards -->
 <div class="container" style="padding-top: 20px;">
     <div class="row">
-        <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <!-- Each card is wrapped in a column with a class col-6 col-lg-3 to create two columns per row -->
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="extra-details.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -136,7 +141,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="jobdashboard.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -146,7 +151,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="mockandquiz.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -156,7 +161,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="col-6 col-lg-3 d-flex justify-content-center">
             <a href="videolectures.html" class="text-dark">
                 <div class="card card-contact">
                     <div class="card-body">
