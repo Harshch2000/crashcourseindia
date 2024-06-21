@@ -20,6 +20,63 @@
         .navbar-brand {
             font-size: 20px; /* Adjust font size for the heading */
         }
+
+        .container {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* Card styling */
+        .card-contact {
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden; /* Ensure content does not overflow */
+            width: 100%; /* Set width to 100% to fit within the container */
+            margin-bottom: 20px; /* Add space between cards on small screens */
+            height: 100px; /* Set height equal to a button */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align content to the left */
+            padding-left: 10px; /* Add padding to the left */
+        }
+
+        /* Card hover effect */
+        .card-contact:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Card body styling */
+        .card-contact .card-body {
+            display: flex;
+            flex-direction: row; /* Align content in a row */
+            align-items: center;
+            text-align: left; /* Align text to the left */
+            padding: 0; /* Remove padding inside the card body */
+        }
+
+        /* Image styling inside cards */
+        .card-contact img {
+            width: 50px; /* Increase image width */
+            height: 50px; /* Increase image height */
+            margin-right: 20px; /* Add margin to the right of the image */
+        }
+
+        /* Text styling inside cards */
+        .card-contact span {
+            font-size: 16px; /* Increase font size for the text */
+            font-weight: bold; /* Set font weight for the text */
+        }
+
+        /* Cards container styling */
+        .cards-container {
+            display: flex;
+            flex-direction: column; /* Ensure cards are displayed in a column */
+            align-items: center; /* Center cards horizontally */
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -41,10 +98,107 @@
 
 <!-- Job Dashboard Content -->
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Coming soon  </h1>
-            <!-- Add your job dashboard content here -->
+    <div class="row justify-content-center"> <!-- Use justify-content-center to centralize -->
+        <!-- Each card is wrapped in a column with a class col to ensure column layout -->
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="ssc.png" alt="SSC Icon">
+                        <span>Staff Selection Commission(SSC)</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="railways.png" alt="Railways Icon">
+                        <span>Railways</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="upsc.png" alt="UPSC Icon">
+                        <span>UPSC</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="jee.png" alt="JEE Icon">
+                        <span>JEE (Engineering)</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="neet.png" alt="NEET Icon">
+                        <span>NEET (Doctor)</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="banking.png" alt="Banking Icon">
+                        <span>Banking</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="cat.png" alt="CAT Icon">
+                        <span>CAT(MBA)</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="nda.png" alt="NDA Icon">
+                        <span>NDA(Defence)</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="teaching.png" alt="Teaching Icon">
+                        <span>Teaching(NET)</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+            <a href="#" class="text-dark w-100">
+                <div class="card card-contact">
+                    <div class="card-body">
+                        <img src="law.png" alt="Law Icon">
+                        <span>LAW(CLAT)</span>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
