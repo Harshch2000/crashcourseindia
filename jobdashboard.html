@@ -66,15 +66,16 @@
 
         /* Text styling inside cards */
         .card-contact span {
-            font-size: 16px; /* Increase font size for the text */
+            font-size: 14px; /* Reduce font size for the text */
             font-weight: bold; /* Set font weight for the text */
         }
 
         /* Cards container styling */
         .cards-container {
             display: flex;
-            flex-direction: column; /* Ensure cards are displayed in a column */
-            align-items: center; /* Center cards horizontally */
+            flex-direction: row; /* Display cards in a row */
+            flex-wrap: wrap; /* Allow wrapping to the next line */
+            justify-content: space-around; /* Add space around cards */
             padding-top: 20px;
         }
     </style>
@@ -98,104 +99,55 @@
 
 <!-- Job Dashboard Content -->
 <div class="container">
-    <div class="row justify-content-center"> <!-- Use justify-content-center to centralize -->
-        <!-- Each card is wrapped in a column with a class col to ensure column layout -->
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
-            <a href="#" class="text-dark w-100">
+    <div class="row cards-container"> <!-- Use cards-container to align cards -->
+        <!-- First card with specific content and link -->
+        <div class="col-md-2 d-flex justify-content-center">
+            <a href="https://forms.gle/dQab4mLNp6qeSrQS8" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
-                        <img src="ssc.png" alt="SSC Icon">
-                        <span>Staff Selection Commission(SSC)</span>
+                        <img src="Delloite.png" alt="Delloite Icon">
+                        <span>Job Title: Data Analyst<br>Experience: Freshers</span>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+        <!-- Blank cards -->
+        <div class="col-md-2 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
-                        <img src="railways.png" alt="Railways Icon">
-                        <span>Railways</span>
+                        <img src="blank.png" alt="Blank Icon">
+                        <span>Blank</span>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+        <div class="col-md-2 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
-                        <img src="upsc.png" alt="UPSC Icon">
-                        <span>UPSC</span>
+                        <img src="blank.png" alt="Blank Icon">
+                        <span>Blank</span>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+        <div class="col-md-2 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
-                        <img src="jee.png" alt="JEE Icon">
-                        <span>JEE (Engineering)</span>
+                        <img src="blank.png" alt="Blank Icon">
+                        <span>Blank</span>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+        <div class="col-md-2 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
-                        <img src="neet.png" alt="NEET Icon">
-                        <span>NEET (Doctor)</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
-            <a href="#" class="text-dark w-100">
-                <div class="card card-contact">
-                    <div class="card-body">
-                        <img src="banking.png" alt="Banking Icon">
-                        <span>Banking</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
-            <a href="#" class="text-dark w-100">
-                <div class="card card-contact">
-                    <div class="card-body">
-                        <img src="cat.png" alt="CAT Icon">
-                        <span>CAT(MBA)</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
-            <a href="#" class="text-dark w-100">
-                <div class="card card-contact">
-                    <div class="card-body">
-                        <img src="nda.png" alt="NDA Icon">
-                        <span>NDA(Defence)</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
-            <a href="#" class="text-dark w-100">
-                <div class="card card-contact">
-                    <div class="card-body">
-                        <img src="teaching.png" alt="Teaching Icon">
-                        <span>Teaching(NET)</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
-            <a href="#" class="text-dark w-100">
-                <div class="card card-contact">
-                    <div class="card-body">
-                        <img src="law.png" alt="Law Icon">
-                        <span>LAW(CLAT)</span>
+                        <img src="blank.png" alt="Blank Icon">
+                        <span>Blank</span>
                     </div>
                 </div>
             </a>
