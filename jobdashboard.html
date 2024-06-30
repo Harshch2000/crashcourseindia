@@ -73,9 +73,8 @@
         /* Cards container styling */
         .cards-container {
             display: flex;
-            flex-direction: row; /* Display cards in a row */
-            flex-wrap: wrap; /* Allow wrapping to the next line */
-            justify-content: space-around; /* Add space around cards */
+            flex-direction: column; /* Ensure cards are displayed in a column */
+            align-items: center; /* Center cards horizontally */
             padding-top: 20px;
         }
     </style>
@@ -99,9 +98,9 @@
 
 <!-- Job Dashboard Content -->
 <div class="container">
-    <div class="row cards-container"> <!-- Use cards-container to align cards -->
-        <!-- First card with specific content and link -->
-        <div class="col-md-2 d-flex justify-content-center">
+    <div class="row justify-content-center"> <!-- Use justify-content-center to centralize -->
+        <!-- Each card is wrapped in a column with a class col to ensure column layout -->
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
             <a href="https://forms.gle/dQab4mLNp6qeSrQS8" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -111,8 +110,7 @@
                 </div>
             </a>
         </div>
-        <!-- Blank cards -->
-        <div class="col-md-2 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -122,7 +120,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-2 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -132,7 +130,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-2 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
@@ -142,7 +140,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-2 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
             <a href="#" class="text-dark w-100">
                 <div class="card card-contact">
                     <div class="card-body">
